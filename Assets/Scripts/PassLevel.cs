@@ -10,23 +10,22 @@ public class PassLevel : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            //SceneManager.LoadScene(2);
             Scene currentScene = SceneManager.GetActiveScene();
 
             // Check the current scene
             if (currentScene.name == "1")
             {
                 // Load scene 3
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(3);
             }
             else if (currentScene.name == "2")
             {
                 // Load scene 4
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(4);
             }
             else if (currentScene.name == "Gimnasio")
             {
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(2);
             }
         }
     }

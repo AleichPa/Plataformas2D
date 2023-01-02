@@ -44,6 +44,7 @@ public class LifeController : MonoBehaviour
                 rb.velocity = new Vector2(0, 0);
                 transform.position = respawn.position;
                 lifes_current = lifes_max;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 break;
             case DeathMode.RealoadScene:          
                 break;
